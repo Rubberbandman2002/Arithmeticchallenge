@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_TODO"
         android:layout_width="424dp"
         android:layout_height="383dp"
         android:layout_marginBottom="8dp"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/godlly_cute_dog" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
@@ -48,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_number"
         app:layout_constraintVertical_bias="1.0">
 
         <ImageButton
@@ -127,10 +127,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.482" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView_sun"
         android:layout_width="85dp"
         android:layout_height="137dp"
         android:layout_marginBottom="8dp"

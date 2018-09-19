@@ -4,4 +4,7 @@
     <string name="todo">TODO</string>
     <string name="how_to_play">How to play?</string>
     <string name="quit">Quit</string>
+    <string name="Menu">Menu</string>
+    <string name="High_score">High Score</string>
+    <string name="Score">Score</string>
 </resources>
