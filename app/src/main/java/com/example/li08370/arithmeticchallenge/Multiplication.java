@@ -29,12 +29,17 @@ public class Multiplication extends ArithmeticChallenge {
     protected int[] createChoices() {
         option1 = num1 * num2;
         do {
-            option2 = num1 * (int) (3 * Math.random() + num2);
+            if(num1 > 3)
+                option2 = num1 * (int)  (Math.random() * ((num2 + 3) - (num1- 3)) + (num1 -3));
+            else
+                option2 = num1 *(int) (3 * Math.random() + num2);
 
         } while (option2 == option1);
         do {
-
-            option3 = num2 * (int) (3 * Math.random() + num1);
+            if(num1 > 3)
+                option3 = num2 * (int)  (Math.random() * ((num1 + 3) - (num2 - 3)) + (num2 -3));
+            else
+                option3 = num2 * (int) (3 * Math.random() + num1);
 
         } while (option3 == option2 || option3 == option1);
         int[] options = {option1, option2, option3};
