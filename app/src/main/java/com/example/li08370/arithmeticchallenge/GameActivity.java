@@ -27,25 +27,25 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        setViewObjects();
     }
     /************************************************************************
      *  Chooses type of game and then links screen objects to
      *  this class' fields.  Declares current high score.
      ************************************************************************/
     private void setViewObjects(){
-        // Get data from Main Activity ************************************************
+        // Get data from Main Activity ********************************************   abstract int[] ****
         Intent intent = getIntent();
         String operation = intent.getStringExtra("Operation");
-
         // Use data to set game object to current game ********************************
-        if(operation.equals("addition"))
-            game = new Addition(1,10); // you may change parameters
-        if(operation.equals("subtraction"))
-            game = new Subtraction(1,10); // you may change parameters
+        //if(operation.equals("addition"))
+           // game = new Addition(1,10); // you may change parameters
+       // if(operation.equals("subtraction"))
+            //game = new Subtraction(1,10); // you may change parameters
         if(operation.equals("multiplication"))
             game = new Multiplication(1,10); // you may change parameters
-        if(operation.equals("division"))
-            game = new Division(1,10); // you may change parameters
+       // if(operation.equals("division"))
+         //   game = new Division(1,10); // you may change parameters
 
         // Assign screen objects to fields ********************************************
         mQuestionText = findViewById(R.id.textView_question);
@@ -116,4 +116,4 @@ public class GameActivity extends AppCompatActivity {
     }
 }
 
-}
+

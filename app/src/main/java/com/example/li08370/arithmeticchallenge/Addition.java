@@ -1,5 +1,5 @@
 package com.example.li08370.arithmeticchallenge;
-
+/**
 public class Addition extends ArithmeticChallenge {
     @Override
     public int getScore(){
@@ -24,4 +24,4 @@ public class Addition extends ArithmeticChallenge {
     }
     int mscore;
 }
-
+/**/

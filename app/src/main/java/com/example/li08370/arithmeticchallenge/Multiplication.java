@@ -15,13 +15,13 @@ public class Multiplication extends ArithmeticChallenge {
     int option1, option2, option3;
 
     public Multiplication(int TOTAL_LEVELS, int TURNS_PER_LEVEL) {
-        //super(TOTAL_LEVELS, TURNS_PER_LEVEL);
+        super(TOTAL_LEVELS, TURNS_PER_LEVEL);
     }
 
     protected String createQuestion() {
         num1 = (int) (11 * Math.random() + 1);
         num2 = (int) (11 * Math.random() + 1);
-        String question = num1 + "x" + num2;
+        String question = num1 + " x " + num2;
         return question;
     }
 
@@ -41,8 +41,8 @@ public class Multiplication extends ArithmeticChallenge {
             else
                 option3 = num2 * (int) (3 * Math.random() + num1);
 
-        } while (option3 == option2 || option3 == option1);
-        int[] options = {option1, option2, option3};
-        return options;
+        } while (option3 == option2 && option3 == option1);
+        int[] Choices = {option1, option2, option3};
+        return Choices;
     }
 }
