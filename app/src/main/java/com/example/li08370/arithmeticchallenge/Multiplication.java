@@ -41,7 +41,7 @@ public class Multiplication extends ArithmeticChallenge {
             else
                 option3 = num2 * (int) (3 * Math.random() + num1);
 
-        } while (option3 == option2 && option3 == option1);
+        } while (option3 == option2 || option3 == option1 || option2 == option1);
         int[] Choices = {option1, option2, option3};
         return Choices;
     }
