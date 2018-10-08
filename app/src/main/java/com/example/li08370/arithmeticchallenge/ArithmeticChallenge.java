@@ -10,6 +10,7 @@ public abstract class ArithmeticChallenge {
     private int mProgress;
     private int mTURNS_PER_LEVEL;
     private int mAnswer;
+    private int mHighScore;
     // fields initialized here
 
     public ArithmeticChallenge(int TOTAL_LEVELS, int TURNS_PER_LEVEL) {
@@ -64,12 +65,17 @@ public abstract class ArithmeticChallenge {
             if (duration > 5000) {
                 duration = 5000;
             }
-        mScore += 100 - duration / 100;
+            mScore += 100 - duration / 100;
         }
     }
 
+    public int getHighScore(){
+        return mHighScore;
+        }
 
-        // other getters and setters declared and implemented here
+    public void setHighScore(int highScore){
+          mHighScore = highScore;
+    }
 
         /******************************************************
          * Concrete Classes
@@ -77,7 +83,6 @@ public abstract class ArithmeticChallenge {
 
         protected boolean isCorrect ( int choice) {
             boolean correct = (Integer.parseInt(mChoiceText[choice])== mAnswer) ? true : false;
-            //rrr
             return correct;
           }
 
